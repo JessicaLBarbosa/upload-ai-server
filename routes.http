@@ -23,3 +23,16 @@ Content-Type: application/json
 {
     "prompt": "Resident Evil, games"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "af4937fa-47a0-40fa-bf96-23486c1e2bec",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do video informada a seguir: '''{transcrition}'''"
+}
+
